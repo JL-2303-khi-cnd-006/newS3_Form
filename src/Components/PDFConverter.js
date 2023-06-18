@@ -28,9 +28,9 @@ const file = new File([pdfData], objectKey, { type: 'application/pdf' });
 
 const config = {
   bucketName: S3_BUCKET,
-  region: 'us-east-1',
-  accessKeyId: 'AKIATFEK3U2S3PZIR5UL',
-  secretAccessKey: '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',
+  region: process.env.REACT_APP_REGION,
+  accessKeyId: process.env.REACT_APP_ACCESS_KEY,
+  secretAccessKey: process.env.REACT_APP_SECRET_ACCESS_KEY,
 };
 
 try {
