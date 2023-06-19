@@ -44,7 +44,7 @@ const SurveyPDF = () => {
     //     email: email,
     //     pdfData: base64PdfData,
     // };
-      console.log(process.env)
+      // console.log(process.env)
     const S3_BUCKET = process.env.REACT_APP_S3_BUCKET;
     const objectKey = 'survey-data';
 
@@ -76,9 +76,9 @@ const SurveyPDF = () => {
     return (
         <div>
             <form ref={formRef} onSubmit={handleSubmit}>
-                <button type="submit">Upload Form</button>
-                <SurveyComponent jsonData={jsonData} />
+                {/* <button type="submit">Upload Form</button> */}
             </form>
+                <SurveyComponent jsonData={jsonData} />
         </div>
     
     );
